@@ -1,0 +1,298 @@
+Chapter 1: จงคำนวณค่า BMI โดยมีสูตรการคำนวณดังนี้
+
+BMI = น้ำหนักหน่วย (kg) / ( ความสูงหน่วย (m) * ความสูงหน่วย (m))
+
+โดยมีเกณฑ์ดังต่อไปนี้
+
+ค่า                             สถานะ
+
+BMI < 18.5               Below normal weight
+
+18.5 <= BMI < 25     Normal weight
+
+25 <= BMI < 30        Overweight
+
+30 <= BMI < 35        Case I Obesity
+
+35 <= BMI < 40        Case II Obesity
+
+BMI >= 40                Case III Obesity
+
+
+
+โดยให้แสดงผลลัพธดังตัวอย่าง
+
+- Test case -
+ *** BMI ***
+Enter your weight(kg) and height(m) : 48 1.68
+Your status is : Below normal weight.
+
+ *** BMI ***
+Enter your weight(kg) and height(m) : 58 1.71
+Your status is : Normal weight.
+
+ *** BMI ***
+Enter your weight(kg) and height(m) : 60 1.48
+Your status is : Overweight.
+
+ *** BMI ***
+Enter your weight(kg) and height(m) : 95 1.76
+Your status is : Case I Obesity.
+
+ *** BMI ***
+Enter your weight(kg) and height(m) : 80 1.48
+Your status is : Case II Obesity.
+
+ *** BMI ***
+Enter your weight(kg) and height(m) : 98 1.55
+Your status is : Case III Obesity.
+
+--------------------------------------------------------------------------
+
+Chapter 2: ให้เขียนโปรแกรมเพื่อหาลำดับของรหัสนักศึกษาที่กำหนด เมื่อเรียงลำดับตามคะแนน (ลำดับที่ 1 คือมีคะแนนมากที่สุด)
+
+โดยรับข้อมูล รหัสนักศึกษา และ คะแนนเป็นเลขทศนิยม ที่ละบรรทัด
+
+และจบด้วย รหัสนักศึกษา ที่ต้องการหาลำดับ
+
+ในการคำนวณลำดับหากมีนักศึกษาที่ได้คะแนนเท่ากันให้เรียนลำดับตามรหัสนักศึกษา (เรียงแบบจำนวนเต็ม)
+
+และให้แสดงผลดังตัวอย่าง
+
+
+- Test case -
+ *** Rank score ***
+Enter ID and Score end with ID : 121 87.25 221 77.00 321 82.50 421 69.75 521 66.00 421
+['121', '87.25', '221', '77.00', '321', '82.50', '421', '69.75', '521', '66.00']
+421
+{'121': 87.25, '321': 82.5, '221': 77.0, '421': 69.75, '521': 66.0}
+4
+
+ *** Rank score ***
+Enter ID and Score end with ID : 111 100 13 96 1234 96 555 99 2121 96 99 99 1234
+['111', '100', '13', '96', '1234', '96', '555', '99', '2121', '96', '99', '99']
+1234
+{'111': 100.0, '99': 99.0, '555': 99.0, '13': 96.0, '1234': 96.0, '2121': 96.0}
+5
+
+ *** Rank score ***
+Enter ID and Score end with ID : 429801 78 359124 89 902316 91.25 773842 45.75 264336
+['429801', '78', '359124', '89', '902316', '91.25', '773842', '45.75']
+264336
+{'902316': 91.25, '359124': 89.0, '429801': 78.0, '773842': 45.75}
+Not Found
+
+--------------------------------------------------------------------------
+
+Chapter 3: จงเขียนโปรแกรมเพื่อรับข้อความ แล้วให้แสดงผล จำนวนตัวอักษรพิมพ์ใหญ่ และ พิมพ์เล็ก และแสดงตัวอักษรที่พบ เรียงตามลำดับตัวอักษร โดยไม่แสดงตัวอักษรซ้ำ และให้แสดงผลตามตัวอย่าง
+
+หมายเหตุ ให้ระวังตัวอักษรตัวใหญ่ตัวเล็ก ให้ดี
+
+- Test case -
+ *** String count ***
+Enter message : I Love KMITL.
+No. of Upper case characters : 7
+Unique Upper case characters : I  K  L  M  T  
+No. of Lower case Characters : 3
+Unique Lower case characters : e  o  v  
+
+ *** String count ***
+Enter message : I see the questions in your eyes. I know what's weighing on your mind. You can be sure I know my part.
+No. of Upper case characters : 4
+Unique Upper case characters : I  Y  
+No. of Lower case Characters : 73
+Unique Lower case characters : a  b  c  d  e  g  h  i  k  m  n  o  p  q  r  s  t  u  w  y  
+
+ *** String count ***
+Enter message : Russia says coronavirus vaccine to be tested on 40,000 volunteers amid safety concerns.
+No. of Upper case characters : 1
+Unique Upper case characters : R  
+No. of Lower case Characters : 67
+Unique Lower case characters : a  b  c  d  e  f  i  l  m  n  o  r  s  t  u  v  y  
+
+ *** String count ***
+Enter message : when i was young. i'd listen to the radio. waitin' for my favorite songs.
+No. of Upper case characters : 0
+Unique Upper case characters : 
+No. of Lower case Characters : 55
+Unique Lower case characters : a  d  e  f  g  h  i  l  m  n  o  r  s  t  u  v  w  y  
+
+ *** String count ***
+Enter message : ON A DARK DESEST HIGHWAY, COOL WIND IN MY HAIR.
+No. of Upper case characters : 36
+Unique Upper case characters : A  C  D  E  G  H  I  K  L  M  N  O  R  S  T  W  Y  
+No. of Lower case Characters : 0
+Unique Lower case characters : 
+
+--------------------------------------------------------------------------
+
+Chapter 4: รับข้อความ 2 ข้อความ
+
+ข้อความแรกให้หมุนซ้าย ข้อความที่สองให้หมุนขวา
+
+แสดงผล
+
+หยุดเมื่อข้อความที่หมุน เหมือนข้อความที่รับเข้ามา
+
+โดยแสดงผล 5 บรรทัดแรก และบรรทัดสุดท้าย
+
+- Test case -
+*** String Rotation ***
+Enter 2 strings : 123 456
+1 312 564
+2 231 645
+3 123 456
+Total of  3 rounds.
+
+*** String Rotation ***
+Enter 2 strings : dict dept
+1 tdic eptd
+2 ctdi ptde
+3 ictd tdep
+4 dict dept
+Total of  4 rounds.
+
+*** String Rotation ***
+Enter 2 strings : Marvel Stinger
+1 lMarve tingerS
+2 elMarv ingerSt
+3 velMar ngerSti
+4 rvelMa gerStin
+5 arvelM erSting
+ . . . . . 
+42 Marvel Stinger
+Total of  42 rounds.
+
+*** String Rotation ***
+Enter 2 strings : debate string
+1 edebat trings
+2 tedeba ringst
+3 atedeb ingstr
+4 batede ngstri
+5 ebated gstrin
+6 debate string
+Total of  6 rounds.
+
+*** String Rotation ***
+Enter 2 strings : jukebox hijacks
+1 xjukebo ijacksh
+2 oxjukeb jackshi
+3 boxjuke ackshij
+4 eboxjuk ckshija
+5 keboxju kshijac
+ . . . . . 
+7 jukebox hijacks
+Total of  7 rounds.
+
+*** String Rotation ***
+Enter 2 strings : King Mongkut
+1 gKin ongkutM
+2 ngKi ngkutMo
+3 ingK gkutMon
+4 King kutMong
+5 gKin utMongk
+ . . . . . 
+28 King Mongkut
+Total of  28 rounds.
+
+*** String Rotation ***
+Enter 2 strings : aaaaaaa 123123
+1 aaaaaaa 231231
+2 aaaaaaa 312312
+3 aaaaaaa 123123
+Total of  3 rounds.
+
+*** String Rotation ***
+Enter 2 strings : Molnupiravir Outpatients
+1 rMolnupiravi utpatientsO
+2 irMolnupirav tpatientsOu
+3 virMolnupira patientsOut
+4 avirMolnupir atientsOutp
+5 ravirMolnupi tientsOutpa
+ . . . . . 
+132 Molnupiravir Outpatients
+Total of  132 rounds.
+
+--------------------------------------------------------------------------
+
+Chapter 5: จงสร้าง class MyInt ซึ่งคลาสนี้เป็นคลาสที่เก็บเลขจำนวนเต็มโดยมี method ดังต่อไปนี้
+
+__init__ สำหรับสร้างคลาส โดยรับจำนวนเต็มเพื่อใช้เป็นตัวแปรในคลาส
+
+isPrime สำหรับตรวจสอบว่าตัวเลขนั้นเป็นจำนวนเฉพาะหรือไม่
+
+showPrime สำหรับแสดงเลขจำนวนเฉพาะระหว่าง 2 ถึงเลขนั้น
+
+__sub__ สำหรับลบค่าตัวตั้งด้วยค่าครึ่งหนึ่งของตัวลบ
+
+
+
+โดยมีการเรียกใช้งานดังนี้
+
+
+
+a = MyInt(20)
+
+b = MyInt(17)
+
+print(a.isPrime())
+
+print(b.isPrime())
+
+print(a.showPrime())
+
+print(b.showPrime())
+
+print(a-b)
+
+
+
+ผลลัพธ์
+
+False
+
+True
+
+2 3 5 7 11 13 17 19 
+
+2 3 5 7 11 13 17 
+
+12
+
+
+โดยให้เขียนโปรแกรมเพื่อรับค่า ตัวเลข 2 ตัว และแสดงผลดังตัวอย่าง
+
+- Test case -
+ *** class MyInt ***
+Enter 2 number : 8 20
+8 isPrime : False
+20 isPrime : False
+Prime number between 2 and 8 : 2 3 5 7 
+Prime number between 2 and 20 : 2 3 5 7 11 13 17 19 
+8 - 20 = -2
+
+ *** class MyInt ***
+Enter 2 number : 1 -10
+1 isPrime : False
+-10 isPrime : False
+Prime number between 2 and 1 : !!!A prime number is a natural number greater than 1
+Prime number between 2 and -10 : !!!A prime number is a natural number greater than 1
+1 - -10 = 6
+
+ *** class MyInt ***
+Enter 2 number : 40 17
+40 isPrime : False
+17 isPrime : True
+Prime number between 2 and 40 : 2 3 5 7 11 13 17 19 23 29 31 37 
+Prime number between 2 and 17 : 2 3 5 7 11 13 17 
+40 - 17 = 32
+
+ *** class MyInt ***
+Enter 2 number : 0 20
+0 isPrime : False
+20 isPrime : False
+Prime number between 2 and 0 : !!!A prime number is a natural number greater than 1
+Prime number between 2 and 20 : 2 3 5 7 11 13 17 19 
+0 - 20 = -10
+
+--------------------------------------------------------------------------
